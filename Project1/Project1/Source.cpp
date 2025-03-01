@@ -2,6 +2,20 @@
 
 using namespace std;
 
+bool soNguyenTo(int soA)
+{
+	if (soA < 2)
+		return false;
+
+	for (int i = 2; i <= sqrt((float)soA); i++)
+	{
+		if (soA % i == 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
 
 bool nam_nhuan(int year)
 {
